@@ -1,0 +1,23 @@
+.socialmedia-list {
+  list-style: none;
+  display: flex;
+
+}
+.socialmedia-contact {
+  margin: 10px 10px 10px 0;  
+}
+.socialmedia-contact a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;  
+
+}
+.vk {
+  background: url('../../../assets/image/Vk.svg') no-repeat ;
+}
+.facebook {
+  background: url('../../../assets/image/Facebook.svg') no-repeat ;
+}
+.instagram {
+  background: url('../../../assets/image/Inst.svg') no-repeat ;
+}

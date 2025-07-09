@@ -1,0 +1,16 @@
+.footer-license {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.license-link {
+  text-decoration: none;
+  
+}
+.license-link a {
+  outline: none;
+  text-decoration: none;
+  padding: 20px;
+  color: #8D8D8E;
+}

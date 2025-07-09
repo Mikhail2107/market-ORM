@@ -1,0 +1,22 @@
+.filters-container {
+  display: block;
+  width: 100%;
+}
+.filters-list {
+  list-style: none;
+  display: flex;
+  margin: 10px 10px 10px 0;
+  padding: 0;
+}
+.filters-item {
+  width: auto;
+  height: 24px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px 15px;
+  align-items: center;
+  line-height: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}

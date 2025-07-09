@@ -1,0 +1,18 @@
+.downloads {
+  list-style: none;
+  display: flex;
+}
+.downloads-store {
+  margin: 10px 10px 10px 0;  
+}
+.downloads-store a{
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+}
+.appstore {
+background:url('../../../assets/image/appstore.svg') no-repeat 50% 50%;
+}
+.googlestore {
+  background: url('../../../assets/image/googleplay.svg') no-repeat 50% 50%;
+}

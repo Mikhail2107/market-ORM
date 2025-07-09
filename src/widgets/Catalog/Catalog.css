@@ -1,0 +1,31 @@
+.category-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin:10px 40px ;
+}
+
+.catalog-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 20px;
+  list-style: none;
+}
+/* .catalog-listitem {
+  width: 100%;
+  height: auto;
+  box-sizing: content-box;
+} */
+
+
+@media (max-width: 500px) {
+  .catalog-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+  }
+  }

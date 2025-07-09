@@ -1,0 +1,25 @@
+.location-container {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.location-image {  
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 41px;
+  background: url('../../../assets/image/location.svg') no-repeat 50% 50%;
+}
+.location-position {
+  max-width: 100%;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #727280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
