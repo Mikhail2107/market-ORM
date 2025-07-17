@@ -1,7 +1,9 @@
 import productCardDefault from '../../assets/image/productCardDefault.svg'
+
 import './ProductCard.css';
 
 const ProductCard = () => {
+  
   return (
     <>
       <div className="product-container">
