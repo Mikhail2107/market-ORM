@@ -17,6 +17,7 @@
 } 
 .profile-cart {
   background: url('../../../assets/image/Basket.svg') no-repeat 50% 50%;
+  text-decoration: none;
 }
 .cart-count {
   color: #2967FF;

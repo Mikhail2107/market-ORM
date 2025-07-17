@@ -25,12 +25,12 @@ function App() {
   console.log(data)
   return (
     <>
+          <Router>
       <main  className='main'>
         <header>
           <Header /> 
         </header>
         <section>
-          <Router>
             <Routes>
               <Route path='/' element={<RecommendPage />}/>
               <Route path='/product/:productId' element={<ProductPage/>}/>
@@ -40,7 +40,7 @@ function App() {
               <Route path='/delivery' element={<DeliveryPage />}/>
               <Route path='/*' element={<ErrorPage />}/>
             </Routes>
-          </Router>          
+                    
         </section> 
         <aside>
             <Aside />
@@ -49,6 +49,7 @@ function App() {
           <Footer />
         </footer>        
       </main>
+      </Router>
     </>
     
   )
