@@ -1,10 +1,7 @@
-import {useParams} from 'react-router-dom'
-
 import productCardDefault from '../../assets/image/productCardDefault.svg'
 import './ProductCard.css';
 
 const ProductCard = () => {
-const productId = useParams();
   return (
     <>
       <div className="product-container">
