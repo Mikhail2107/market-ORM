@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://test2.sionic.ru/api/'
+export const BASE_URL = 'https://dummyjson.com/'

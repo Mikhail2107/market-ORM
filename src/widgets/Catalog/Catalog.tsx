@@ -2,13 +2,15 @@ import { useGetProductsQuery } from '../../entities/Products/productsApi';
 
 import Filters from '../../share/Filters/Filters';
 import ProductItem from '../../share/ui/ProductItem/ProductItem';
+
+import  {ProductItemProps} from '../../share/ui/interfaces'
 import './Catalog.css';
 
 const Catalog = () => {
 const {data: products, isLoading, isError} = useGetProductsQuery(undefined);
 
 
-// console.log(products)
+console.log(products)
 if (isLoading) {
   return <span>Loading...</span>;
 }
@@ -24,8 +26,8 @@ if (isError) {
         <Filters />
       </div>
       <ul className="catalog-list">
-        {products.map((product: { id: number; }) => (
-        <li key={products.id} className="catalog-listitem">
+        {products.products.map((product:ProductItemProps) => (
+        <li key={product.id} className="catalog-listitem">
           <ProductItem {...product} /> 
         </li>
         ))}       

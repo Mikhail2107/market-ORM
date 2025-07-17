@@ -18,7 +18,7 @@ import './App.css';
 function App() {
   const [data, setData] = useState([])
   useEffect(()=>{
-    fetch('https://test2.sionic.ru/api/ProductVariationPropertyValues/1')
+    fetch('https://dummyjson.com/products')
       .then(res => res.json())
       .then(dt => setData(dt))
   },[])

@@ -1,18 +1,17 @@
-import Filters from '../../Filters/Filters';
-import image from '../../../assets/image/defaultPhoto.png';
+// import Filters from '../../Filters/Filters';
+// import image from '../../../assets/image/defaultPhoto.png';
 
 import './ProductItem.css';
 
 
 interface ProductItemProps {
   id: number;
-  name?: string;
-  // productPrice: number;
-  // productOldPrice: number;
-  // productTax: number;
-  // productPathImg: string;
+  title: string;
+  images: string[];
+  price: number;
+  discountPercentage: number;
 }
-const ProductItem = ({name, id}: ProductItemProps) => {
+const ProductItem = ({title, id, images, price, discountPercentage }: ProductItemProps) => {
   // const product:ProductItemProps = 
   //   { 
       
@@ -26,15 +25,15 @@ const ProductItem = ({name, id}: ProductItemProps) => {
     <>
       <div key={id} className="product-card">
         <div className="product-image-box">
-          <img src={image} alt="#" className="product-image" />
-          <div className="product-filters">
+          <img src={images[0]} alt={title} className="product-image" />
+          {/* <div className="product-filters">
             <Filters />
-          </div>        
+          </div>         */}
         </div>        
-        <span className="product-title">{name}</span>
-        <span className="product-price">300000</span>
+        <span className="product-title">{title}</span>
+        <span className="product-price">{price}₽</span>
         <span className="product-oldprice">450000</span>
-        <span className="product-discount">10</span>
+        <span className="product-discount">{discountPercentage}%</span>
         <button className="product-buy">Добавить в корзину</button>
       </div>
     </>
