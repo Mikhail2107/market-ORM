@@ -53,8 +53,8 @@ const Delivery = () => {
             <span className="delivery-sold-price">200000 руб</span>
             <span className="delivery-sold-title">Стоимость доставки</span>
             <span className="delivery-price">200 руб</span>
-            <div className="delivery-total">Итого</div>
-            <div className="delivery-total-price">200200 руб</div>
+            <span className="delivery-total">Итого</span>
+            <span className="delivery-total-price">200200 руб</span>
           </div>
           <button className="button-sold">Сделать заказ</button>
         </form>
