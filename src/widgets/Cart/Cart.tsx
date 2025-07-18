@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import productDefault from '../../assets/image/productImage.png'
 
 import './Cart.css';
@@ -58,6 +59,7 @@ const Cart = () => {
           </li>      
         </ul>
       </div>
+      <Link to={'/delivery'} className=''>Доставка</Link>
     </div>
       
     </>
