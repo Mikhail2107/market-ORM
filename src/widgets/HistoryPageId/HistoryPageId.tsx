@@ -7,7 +7,7 @@ const HistoryPageId = () => {
   return (
     <>
       <div className="order-container">
-      <h1>История заказов</h1>
+      <h2>История заказов</h2>
         <button className="order-button--undo">Назад</button>
         <div className="order-box">
           <h2 className="order-title">Заказ №Z2020-17</h2>

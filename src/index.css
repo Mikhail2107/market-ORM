@@ -9,3 +9,13 @@
   padding: 0;
 }
 
+h2 {
+  display: flex;
+  font-size: 5vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 700;
+  color: #2D2D2F;
+}

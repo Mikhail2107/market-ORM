@@ -8,7 +8,7 @@ const History = () => {
     <>
       <div className="history-container">
         <div className="history-box">
-        <h1>История заказов</h1>
+        <h2>История заказов</h2>
           <ul className="history-list">
             <li className="history-card">
               <HistoryCard />

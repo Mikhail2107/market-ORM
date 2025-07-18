@@ -9,7 +9,7 @@ const Cart = () => {
     <>
     <div className="cart-container">
       <div className="cart-header">
-        <h1 className="cart-title">Корзина</h1>
+        <h2 className="cart-title">Корзина</h2>
         <span className="cart-clear">Очистить корзину</span>
       </div>
       <div className="cart-box">

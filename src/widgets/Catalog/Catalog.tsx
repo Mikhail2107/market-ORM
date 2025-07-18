@@ -1,6 +1,6 @@
 import { useGetProductsQuery } from '../../entities/Products/productsApi';
 
-import Filters from '../../share/Filters/Filters';
+// import Filters from '../../share/Filters/Filters';
 import ProductItem from '../../share/ui/ProductItem/ProductItem';
 
 import  {ProductItemProps} from '../../share/ui/interfaces'
@@ -23,7 +23,7 @@ if (isError) {
     <div className="category-container">
       <div className="catalog-header">
         <h2>Категории товаров</h2>
-        <Filters />
+        {/* <Filters /> */}
       </div>
       <ul className="catalog-list">
         {products.products.map((product:ProductItemProps) => (

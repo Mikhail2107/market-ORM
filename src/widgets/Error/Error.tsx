@@ -6,7 +6,7 @@ const Error = () => {
   return (
     <>
     <div className="error-box">
-      <h1 className="error-title">PAGE NOT FOUND</h1>
+      <h2 className="error-title">PAGE NOT FOUND</h2>
       <img src={image404} alt="error-image" className="error-image" />
     </div>
       
