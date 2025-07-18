@@ -17,7 +17,7 @@ const Cart = () => {
         <div className="cart-state">
           <span className="cart-state-title">Xiaomi</span>          
           <span className="cart-state-total">Стоимость корзины: 1185000Р</span>
-          <button className="cart-state-button">Оформить</button>
+          <Link to={'/delivery'} className="cart-state-button">Оформить</Link>
           <div className="cart-state-image"></div>
         </div>
         <ul className="cart-list">
@@ -59,7 +59,6 @@ const Cart = () => {
           </li>      
         </ul>
       </div>
-      <Link to={'/delivery'} className=''>Доставка</Link>
     </div>
       
     </>

@@ -63,8 +63,9 @@ margin: auto;
   border-radius: 51px;
   color: #ffffff;
   cursor: pointer;
-  margin: auto;
-
+  /* margin: auto; */
+  text-align: center;
+  text-decoration: none;
 }
 .cart-state-button:active {
   background-color: #ffffff;
