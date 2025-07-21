@@ -44,7 +44,7 @@ const ProductCard = () => {
               </li>
 
             </ul>
-            <Button className="product-card-tobuy" children={'В корзину'} type={'button'} ariaLabel={'В корзину'}></Button>
+            <Button className="product-card-tobuy" children={'В корзину'} type={'button'} ariaLabel={'В корзину'} variant={'button'}></Button>
           </div>
         </div>
       </div>

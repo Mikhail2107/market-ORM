@@ -4,7 +4,7 @@ import './Button.css';
 interface ButtonProps {
     children: React.ReactNode;
     variant: 'link' | 'button';
-    type?: 'button' | 'submit' | 'reset'; // Только для variant="button"
+    type?: 'button' | 'submit' | 'reset';
     linkTo?: string;
     className?: string;
     onClick?: () => void;
@@ -36,7 +36,7 @@ const Button = ({
 
     return (
         <button
-            type={type} // Используем переданный type (button/submit/reset)
+            type={type} 
             className={buttonClasses}
             onClick={onClick}
             aria-label={ariaLabel}
