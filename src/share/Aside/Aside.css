@@ -14,8 +14,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  width: 900%;
-  height: 20vh;
+  width: 90%;
+  height: 10vw;
   border: 1px solid #FF2D87;
   border-radius: 20px; 
   position: relative;
@@ -47,18 +47,28 @@
   grid-row: 2/3;
 }
 
-@media (min-width: 700px) and (max-width: 1130px) {
+@media (min-width: 701px) and (max-width: 1130px) {
 .item-title {
   font-size:2vw;    
+  height: auto; 
+  }
+  .aside-item {    
+   height: auto; 
   }
 }
 @media (min-width: 500px) and (max-width: 700px) {
   .item-title {
-  font-size: 3vw;    
+  font-size: 3vw;     
+  }
+   .aside-item {    
+   height: auto; 
   }
 }
 @media (min-width: 100px) and (max-width: 499px) {
   .item-title {    
-  font-size: 4vw;
+  font-size: 4vw;  
+  }
+  .aside-item {    
+   height: auto; 
   }
 }

@@ -2,6 +2,7 @@
 
 import { SetStateAction, useState } from 'react';
 import './Delivery.css';
+import Button from '../../share/ui/Button/Button';
 
 const Delivery = () => {
   const [selectedCity, setSelectedCity] = useState('');
@@ -56,7 +57,7 @@ const Delivery = () => {
             <span className="delivery-total">Итого</span>
             <span className="delivery-total-price">200200 руб</span>
           </div>
-          <button className="button-sold">Сделать заказ</button>
+          <Button className="button-sold" children={'Сделать заказ'} type={'link'}/>
         </form>
       </div>
     </>

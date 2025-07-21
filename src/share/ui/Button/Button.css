@@ -1,6 +1,6 @@
 .button_custom {
   width: 14vw;
-  height: 4vh;
+  height: 2vw;
   border-radius: 51px;
   cursor: pointer;
   font-weight: 500;
@@ -37,15 +37,18 @@
 @media (min-width: 700px) and (max-width: 1130px) {
 .button_custom{
     width: 25vw;
+    height: 4vw;
   }
 }
 @media (min-width: 500px) and (max-width: 700px) {
   .button_custom {
     width: 30vw;
+    height: 5vw;
   }
 }
 @media (min-width: 100px) and (max-width: 499px) {
   .button_custom {    
     width: 50vw;
+    height: 8vw;
   }
 }
