@@ -11,7 +11,7 @@ const Aside = () => {
           <li className="aside-item">
             <div className="item-image"></div>
             <span className='item-title'>Получай товары бесплатно</span>
-            <Button type='link'linkTo='/' className='item-button' children={'Узнать подробнее'} ></Button>
+            <Button type='link' linkTo='/' className='item-button' children={'Узнать подробнее'}></Button>
             {/* <button className='item-button'>Узнать подробнее</button> */}
           </li>
         </ul>

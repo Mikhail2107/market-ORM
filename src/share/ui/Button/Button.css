@@ -17,10 +17,6 @@
   color: #2967FF;
 }
 
-.button__style:hover {
-  background-color: #f0f5ff;
-}
-
 .button__style:active {
   background-color: #2967FF;
   color: #ffffff;
@@ -31,10 +27,6 @@
   border: 1px solid #ffffff;
   color: #ffffff;
   text-decoration: none;
-}
-
-.link__style:hover {
-  background-color: #1a52e6;
 }
 
 .link__style:active {

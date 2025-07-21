@@ -1,6 +1,7 @@
 // import Filters from '../../Filters/Filters';
 // import image from '../../../assets/image/defaultPhoto.png';
 
+import Button from '../Button/Button';
 import './ProductItem.css';
 
 
@@ -34,7 +35,7 @@ const ProductItem = ({title, id, images, price, discountPercentage }: ProductIte
         <span className="product-price">{price}₽</span>
         <span className="product-oldprice">450000</span>
         <span className="product-discount">{discountPercentage}%</span>
-        <button className="product-buy">Добавить в корзину</button>
+        <Button className="product-buy" children={'Добавить в корзину'} type={'button'}></Button>
       </div>
     </>
   )

@@ -55,19 +55,6 @@
 }
 .product-buy {
   grid-column: 1/4;
-  grid-row: 8/9;
-  width: 100%;
-  height: 40px;
-  background-color: #ffffff;
-  border: 1px solid #2967FF;
-  border-radius: 26px;
-  cursor: pointer;
-  color: #2967FF;
+  grid-row: 8/9;  
 }
 
-.product-buy:active {  
-  cursor: pointer;
-  color: #ffffff;
-  background-color: #2967FF;
-
-}

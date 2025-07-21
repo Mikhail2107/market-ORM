@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import './Button.css';
 
 interface ButtonProps {
-    children: React.ReactNode;
+    children: string;
     linkTo?: string;
     className?: string;
-    type?: 'link' | 'button';
+    type: 'link' | 'button';
     onClick?: () => void;
     ariaLabel?: string;
 }
@@ -25,7 +25,7 @@ const Button = ({
             <Link
                 to={linkTo}
                 className={buttonClasses}
-                aria-label={ariaLabel}
+                aria-label={children}
             >
                 {children}
             </Link>

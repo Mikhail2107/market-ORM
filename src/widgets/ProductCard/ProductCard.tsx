@@ -1,4 +1,5 @@
 import productCardDefault from '../../assets/image/productCardDefault.svg'
+import Button from '../../share/ui/Button/Button';
 
 import './ProductCard.css';
 
@@ -43,7 +44,7 @@ const ProductCard = () => {
               </li>
 
             </ul>
-            <button className="product-card-tobuy">В корзину за 17990р</button>
+            <Button className="product-card-tobuy" children={'В корзину'} type={'button'} ariaLabel={'В корзину'}></Button>
           </div>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import { useGetProductsQuery } from '../../entities/Products/productsApi';
-import Button from '../../share/ui/Button/Button';
 
 // import Filters from '../../share/Filters/Filters';
 import ProductItem from '../../share/ui/ProductItem/ProductItem';
@@ -23,10 +22,7 @@ if (isError) {
     <>
     <div className="category-container">
       <div className="catalog-header">
-        <h2>Категории товаров</h2>
-        <Button type={'link'} linkTo={'/cart'} >Купить</Button>
-        <Button type={'button'} >Купить</Button>
-
+        <h2>Категории товаров</h2>   
         {/* <Filters /> */}
       </div>
       <ul className="catalog-list">
