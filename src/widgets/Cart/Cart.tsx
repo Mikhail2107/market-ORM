@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
 import productDefault from '../../assets/image/productImage.png'
 
 import './Cart.css';
+import Button from '../../share/ui/Button/Button';
 
 
 const Cart = () => {
@@ -11,13 +11,13 @@ const Cart = () => {
     <div className="cart-container">
       <div className="cart-header">
         <h2 className="cart-title">Корзина</h2>
-        <span className="cart-clear">Очистить корзину</span>
+        <Button type='button' className="cart-clear">Очистить корзину</Button>
       </div>
       <div className="cart-box">
         <div className="cart-state">
           <span className="cart-state-title">Xiaomi</span>          
           <span className="cart-state-total">Стоимость корзины: 1185000Р</span>
-          <Link to={'/delivery'} className="cart-state-button">Оформить</Link>
+          <Button type='link' linkTo={'/delivery'} className="cart-state-button">Оформить</Button>
           <div className="cart-state-image"></div>
         </div>
         <ul className="cart-list">

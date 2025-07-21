@@ -1,0 +1,44 @@
+.button_custom {
+  width: 14vw;
+  height: 4vh;
+  border-radius: 51px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: medium;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__style {
+  background-color: #ffffff;
+  border: 1px solid #2967FF;
+  color: #2967FF;
+}
+
+.button__style:hover {
+  background-color: #f0f5ff;
+}
+
+.button__style:active {
+  background-color: #2967FF;
+  color: #ffffff;
+}
+
+.link__style {
+  background-color: #2967FF;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link__style:hover {
+  background-color: #1a52e6;
+}
+
+.link__style:active {
+  background-color: #ffffff;
+  color: #2967FF;
+  border-color: #2967FF;
+}
