@@ -14,8 +14,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  width: 100%;
-  height: 143px;
+  width: 900%;
+  height: 20vh;
   border: 1px solid #FF2D87;
   border-radius: 20px; 
   position: relative;
@@ -36,13 +36,29 @@
 .item-title {
   grid-column: 2/4;
   grid-row: 1/2;  
-  font-size: 20px;
+  font-size: 1vw;
   font-weight: 600;
   line-height: 26px;
   color:#2967FF;
-  margin: 20px auto;
+  margin: 20px ;
 }
 .item-button {
   grid-column: 2/4;
   grid-row: 2/3;
+}
+
+@media (min-width: 700px) and (max-width: 1130px) {
+.item-title {
+  font-size:2vw;    
+  }
+}
+@media (min-width: 500px) and (max-width: 700px) {
+  .item-title {
+  font-size: 3vw;    
+  }
+}
+@media (min-width: 100px) and (max-width: 499px) {
+  .item-title {    
+  font-size: 4vw;
+  }
 }
