@@ -1,4 +1,5 @@
-import productDefault from '../../assets/image/productImage.png'
+
+import CartItem from '../../share/ui/Button/CartItem/CartItem';
 
 import './Cart.css';
 import Button from '../../share/ui/Button/Button';
@@ -21,42 +22,10 @@ const Cart = () => {
           <div className="cart-state-image"></div>
         </div>
         <ul className="cart-list">
-          <li className="cart-product">
-            <img src={productDefault} alt="" className="cart-product-image" />
-            <span className="cart-product-title">Смартфон Xiaomi Redmi Note 8 Pro </span>
-            <span className="cart-product-description">6/128GB белый</span>
-            <div className="buttons-count">
-              <button className="decriment">-</button>
-              <span className="product-count">25</span>
-              <button className="increment">+</button>
-            </div>
-            <span className="cart-product-price">от 350 000 руб</span>
-            <button className="cart-product-delete"></button>
-          </li>      
-          <li className="cart-product">
-            <img src={productDefault} alt="" className="cart-product-image" />
-            <span className="cart-product-title">Смартфон Xiaomi Redmi Note 8 Pro </span>
-            <span className="cart-product-description">6/128GB белый</span>
-            <div className="buttons-count">
-              <button className="decriment">-</button>
-              <span className="product-count">25</span>
-              <button className="increment">+</button>
-            </div>
-            <span className="cart-product-price">от 350 000 руб</span>
-            <button className="cart-product-delete"></button>
-          </li>
-          <li className="cart-product">
-            <img src={productDefault} alt="" className="cart-product-image" />
-            <span className="cart-product-title">Смартфон Xiaomi Redmi Note 8 Pro </span>
-            <span className="cart-product-description">6/128GB белый</span>
-            <div className="buttons-count">
-              <button className="decriment">-</button>
-              <span className="product-count">25</span>
-              <button className="increment">+</button>
-            </div>
-            <span className="cart-product-price">от 350 000 руб</span>
-            <button className="cart-product-delete"></button>
-          </li>      
+          <li key={'1'}>
+            <CartItem />
+          </li>    
+               
         </ul>
       </div>
     </div>
