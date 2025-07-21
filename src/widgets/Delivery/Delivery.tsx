@@ -57,7 +57,7 @@ const Delivery = () => {
             <span className="delivery-total">Итого</span>
             <span className="delivery-total-price">200200 руб</span>
           </div>
-          <Button className="button-sold" children={'Сделать заказ'} type={'link'}/>
+          <Button className="button-sold" children={'Сделать заказ'} type={'submit'} variant={'button'}/>
         </form>
       </div>
     </>

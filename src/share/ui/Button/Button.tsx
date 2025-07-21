@@ -2,30 +2,32 @@ import { Link } from 'react-router-dom';
 import './Button.css';
 
 interface ButtonProps {
-    children: string;
+    children: React.ReactNode;
+    variant: 'link' | 'button';
+    type?: 'button' | 'submit' | 'reset'; // Только для variant="button"
     linkTo?: string;
     className?: string;
-    type: 'link' | 'button';
     onClick?: () => void;
     ariaLabel?: string;
 }
 
 const Button = ({
     children,
-    className = '',
+    variant = 'button',
     type = 'button',
     linkTo = '/',
+    className = '',
     onClick,
     ariaLabel,
 }: ButtonProps) => {
-    const buttonClasses = `button_custom ${type}__style ${className}`;
+    const buttonClasses = `button_custom ${variant}__style ${className}`;
 
-    if (type === 'link') {
+    if (variant === 'link') {
         return (
             <Link
                 to={linkTo}
                 className={buttonClasses}
-                aria-label={children}
+                aria-label={ariaLabel}
             >
                 {children}
             </Link>
@@ -34,7 +36,7 @@ const Button = ({
 
     return (
         <button
-            type="button"
+            type={type} // Используем переданный type (button/submit/reset)
             className={buttonClasses}
             onClick={onClick}
             aria-label={ariaLabel}

@@ -68,8 +68,13 @@
   grid-column: 2/3;
   grid-row: 2/3;
   width: 100%;
+  background-color: #2967FF;
+  color: #ffffff;
 }
-
+.button-sold:active {  
+  background-color: #ffffff;
+  color: #2967FF;
+}
 @media (max-width: 500px){
   .delivery-box {
     display: grid;
