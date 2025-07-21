@@ -34,3 +34,18 @@
   color: #2967FF;
   border-color: #2967FF;
 }
+@media (min-width: 700px) and (max-width: 1130px) {
+.button_custom{
+    width: 25vw;
+  }
+}
+@media (min-width: 500px) and (max-width: 700px) {
+  .button_custom {
+    width: 30vw;
+  }
+}
+@media (min-width: 100px) and (max-width: 499px) {
+  .button_custom {    
+    width: 50vw;
+  }
+}

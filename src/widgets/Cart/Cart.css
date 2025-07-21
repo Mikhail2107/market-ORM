@@ -41,11 +41,11 @@
   
 }
 .cart-state-title {
-grid-column: 1/2;
-grid-row: 1/2;
-font-weight: 600;
-font-size: 20px;
-margin: auto;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-weight: 600;
+  font-size: 20px;
+  margin: auto;
 }
 .cart-state-total {
   grid-column:2/3 ;

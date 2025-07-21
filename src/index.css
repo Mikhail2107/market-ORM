@@ -3,8 +3,8 @@
   src: url('./assets/fonts/Raleway-Regular.ttf');
 }
 * {
- font-family: 'Raleway';
- color:#2D2D2F;
+  font-family: 'Raleway';
+  color:#2D2D2F;
   margin: 0;
   padding: 0;
 }

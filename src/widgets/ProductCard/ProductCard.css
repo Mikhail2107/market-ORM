@@ -95,9 +95,9 @@
 }
 
 @media (max-width:1130px) {
-  * {
+  /* * {
     font-size: 0.8rem;
-  }
+  } */
   .product-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
