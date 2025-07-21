@@ -1,5 +1,5 @@
 
-import CartItem from '../../share/ui/Button/CartItem/CartItem';
+import CartItem from '../../share/ui/CartItem/CartItem';
 
 import './Cart.css';
 import Button from '../../share/ui/Button/Button';
@@ -25,7 +25,9 @@ const Cart = () => {
           <li key={'1'}>
             <CartItem />
           </li>    
-               
+          <li key={'2'}>
+            <CartItem />
+          </li> 
         </ul>
       </div>
     </div>

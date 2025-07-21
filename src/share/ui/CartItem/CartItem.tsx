@@ -1,4 +1,4 @@
-import productDefault from '../../../../assets/image/productImage.png';
+import productDefault from '../../../assets/image/productImage.png';
 import './CartItem.css';
 
 const CartItem = () => {
