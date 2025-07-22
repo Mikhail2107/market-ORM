@@ -1,14 +1,15 @@
 import Button from '../Button/Button';
+import { ProductItemProps } from '../interfaces';
 import './ProductItem.css';
 
 
-interface ProductItemProps {
-  id: number;
-  title: string;
-  images: string[];
-  price: number;
-  discountPercentage: number;
-}
+// interface ProductItemProps {
+//   id: number;
+//   title: string;
+//   images: string[];
+//   price: number;
+//   discountPercentage: number;
+// }
 const ProductItem = ({title, id, images, price, discountPercentage }: ProductItemProps) => {
  
   return (
