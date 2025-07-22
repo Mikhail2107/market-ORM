@@ -10,7 +10,7 @@ import CartPage from '../CartPage/CartPage';
 import HistoryPage from '../HistoryPage/HistoryPage';
 import DeliveryPage from '../DeliveryPage/DeliveryPage';
 import ErrorPage from '../ErrorPage/ErrorPage';
-import HistoryPageId from '../../widgets/HistoryPageId/HistoryPageId';
+import HistoryPageId from '../../share/ui/HistoryPageId/HistoryPageId';
 import ProductPage from '../../pages/ProductPage/ProductPage';
 
 import './App.css';

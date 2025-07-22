@@ -1,6 +1,6 @@
 // import defaultProduct from '../../assets/image/productImage.png'
-import Button from '../../share/ui/Button/Button';
-import HistoryIdCard from '../HistoryIdCard/HistoryIdCard';
+import Button from '../Button/Button';
+import HistoryIdCard from '../../../widgets/HistoryIdCard/HistoryIdCard';
 import './HistoryPageId.css';
 
 const HistoryPageId = () => {
@@ -9,7 +9,7 @@ const HistoryPageId = () => {
     <>
       <div className="order-container">
       <h2>История заказов</h2>
-        <Button className="order-button--undo" children={'Назад'} type={'link'} linkTo='/history' ></Button>
+        <Button className="order-button--undo" children={'Назад'} variant='link' linkTo='/history' ></Button>
         <div className="order-box">
           <h2 className="order-title">Заказ №Z2020-17</h2>
           <h3 className="order-list-title">Товары</h3>
