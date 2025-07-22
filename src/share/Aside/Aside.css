@@ -3,6 +3,7 @@
   height: 100%;
   display: flex;
   border: 1px solid #F0F4FB;
+  margin: 0 auto;
 }
 .aside-list {    
   list-style: none;

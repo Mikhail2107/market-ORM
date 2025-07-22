@@ -4,6 +4,13 @@ import { SetStateAction, useState } from 'react';
 import './Delivery.css';
 import Button from '../../share/ui/Button/Button';
 
+const cities = [
+  { id: 1, value: "", title: "Выберите город", disabled: true, hidden: true },
+  { id: 2, value: "moscow", title: "Москва" },
+  { id: 3, value: "spb", title: "Санкт-Петербург" },
+  { id: 4, value: "ekb", title: "Екатеринбург" },
+  { id: 5, value: "rnd", title: "Ростов-на-Дону" },
+];
 const Delivery = () => {
   const [selectedCity, setSelectedCity] = useState('');
 
@@ -30,13 +37,21 @@ const Delivery = () => {
                   className="delivery-date-time delivery-input" 
                   placeholder="Выберите время"/>
             <label htmlFor="address" className="delivery-address-title delivery-label">Куда доставить?</label>
-            <select value={selectedCity} onChange={handleChange} className="delivery-address delivery-input">
-              <option value="" disabled hidden>
-                Выберите город
-              </option>
-              <option value="moscow">Москва</option>
-              <option value="spb">Санкт-Петербург</option>
-              <option value="novosibirsk">Новосибирск</option>
+            <select 
+              value={selectedCity} 
+              onChange={handleChange} 
+              className="delivery-address delivery-input"
+            >
+              {cities.map((city) => (
+                <option 
+                  key={city.id} 
+                  value={city.value}
+                  disabled={city.disabled} 
+                  hidden={city.hidden}
+                >
+                  {city.title}
+                </option>
+              ))}
             </select>
             <label htmlFor="name-client" className="delivery-name-title delivery-label">Имя</label>
             <input type="text" 
@@ -46,7 +61,7 @@ const Delivery = () => {
             <label htmlFor="phone-client" className="delivery-phone-title delivery-label">Телефон</label>
             <input type="tel" 
                   name="phone-client" 
-                  id="phone-client"  
+                  id="phone-client" inputMode='tel' 
                   className="delivery-phone delivery-input"/>
           </div>
           <div className="delivery-sold">
