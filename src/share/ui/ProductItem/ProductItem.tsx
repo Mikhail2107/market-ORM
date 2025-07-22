@@ -1,6 +1,3 @@
-// import Filters from '../../Filters/Filters';
-// import image from '../../../assets/image/defaultPhoto.png';
-
 import Button from '../Button/Button';
 import './ProductItem.css';
 
@@ -13,15 +10,7 @@ interface ProductItemProps {
   discountPercentage: number;
 }
 const ProductItem = ({title, id, images, price, discountPercentage }: ProductItemProps) => {
-  // const product:ProductItemProps = 
-  //   { 
-      
-  //     productPrice: 300000,
-  //     productOldPrice: 450000,
-  //     productTax: -10,
-  //     productPathImg: image,
-  //   }
-  
+ 
   return (
     <>
       <div key={id} className="product-card">
@@ -35,7 +24,7 @@ const ProductItem = ({title, id, images, price, discountPercentage }: ProductIte
         <span className="product-price">{price}₽</span>
         <span className="product-oldprice">450000</span>
         <span className="product-discount">{discountPercentage}%</span>
-        <Button className="product-buy" children={'Добавить в корзину'} type={'button'}></Button>
+        <Button className="product-buy" children={'Добавить в корзину'} type={'button'} variant='button'/>
       </div>
     </>
   )

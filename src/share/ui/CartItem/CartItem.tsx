@@ -2,7 +2,6 @@ import productDefault from '../../../assets/image/productImage.png';
 import './CartItem.css';
 
 const CartItem = () => {
-
     return (
         <>
         <div className="cart-product">
