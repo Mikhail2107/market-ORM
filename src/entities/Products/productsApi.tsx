@@ -7,14 +7,16 @@ export const productsApi = createApi({
   reducerPath: 'productsApi',
   baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }), 
   endpoints: (builder) => ({
-    getProducts: builder.query<ProductItemProps[], { q: string; limit: number; skip: number }>({
+    getProductsSearch: builder.query<ProductItemProps[], { q: string; limit: number; skip: number }>({
       query: ({ q, limit, skip }) => `/products/search?q=${q}&limit=${limit}&skip=${skip}`,
       transformResponse: (response: ProductSearch) => response.products, 
     }),
     getProductById: builder.query<ProductItemProps, number>({
       query: (productId) => `/products/${productId}`,  
     }),
-    
+    getProducts: builder.query({
+    query: () => 'products'
+   }),
     getCart: builder.query({
       query: () => '/cart',
     }),     
@@ -22,9 +24,10 @@ export const productsApi = createApi({
 });
 
 export const { 
-  useGetProductsQuery, 
+  useGetProductsSearchQuery, 
   useGetProductByIdQuery,
   useGetCartQuery, 
+  useGetProductsQuery
 } = productsApi;
 
 
