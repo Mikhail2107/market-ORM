@@ -19,7 +19,10 @@
   border: none;
 
 }
-
+.cart-clear:active  {
+  background-color: #FF2D87;
+  
+}
 .cart-box {
   width: 100%;
   height: 100vh;
