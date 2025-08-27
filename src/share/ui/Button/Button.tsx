@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './Button.css';
 
 interface ButtonProps {
-    children: React.ReactNode;
+    children: string;
     variant: 'link' | 'button';
     type?: 'button' | 'submit' | 'reset';
     linkTo?: string;
@@ -21,7 +21,7 @@ const Button = ({
     ariaLabel,
 }: ButtonProps) => {
     const buttonClasses = `button_custom ${variant}__style ${className}`;
-
+    ariaLabel = children;
     if (variant === 'link') {
         return (
             <Link
